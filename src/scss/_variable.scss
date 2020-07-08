@@ -1,0 +1,31 @@
+$primary-color:#e50914;
+$overlay-color:rgba(0,0,0,0.6);
+$border-bottom-color:#222;
+$alert-color:#ffa00a;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    background-color: #000;
+    overflow-x:hidden;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration: none;
+    color:white;
+    background-color:$primary-color;
+    text-align: center;
+}
+
+.change_top{
+    top:7px!important;
+    font-weight: bold;
+    font-size:0.8rem;
+    color:#555;
+}
