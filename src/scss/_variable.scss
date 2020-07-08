@@ -24,8 +24,20 @@ body{
 }
 
 .change_top{
-    top:7px!important;
+    top:4px!important;
     font-weight: bold;
     font-size:0.8rem;
     color:#555;
+}
+
+.alert_msz{
+    display:none;
+    position:relative;
+    color:$alert-color;
+    text-align:left;
+    max-width:800px;
+    margin:0 auto;
+    padding:0 1.4rem;
+    top:0;
+    left:0;
 }
