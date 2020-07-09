@@ -3,6 +3,7 @@ $overlay-color:rgba(0,0,0,0.6);
 $border-bottom-color:#222;
 $alert-color:#ffa00a;
 $download-color:#0071eb;
+$ask-back-color:#303030;
 
 *{
     margin:0;
@@ -51,4 +52,14 @@ body{
 
 .box_reverse{
     flex-direction:row-reverse;
+}
+
+.asked_container{
+    max-width:820px;
+    width:100%;
+    margin:0 auto;
+}
+
+.hide{
+    display:none;
 }

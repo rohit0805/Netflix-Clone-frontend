@@ -1,12 +1,32 @@
 import '../scss/style.scss';
 
-var Controller=(function(){
-    var flag=0,btn_element;
+var QueryController=(function(){
     var selector={
         placeholder:document.querySelector('.placeholder'),
         input_email:document.querySelector('.input_email'),
         alert:document.querySelector('.alert_msz'),
+        question:document.querySelectorAll('.asked'),
     };
+
+    return{
+        getSelector:()=>{
+            return selector;
+        },
+        ShowAnswer:(id)=>{
+            id=id.split('_')[1];
+            //change the font icon
+            var icon_str=`.ans_icon_${id}`;
+            document.querySelector(icon_str).classList.toggle('fa-plus');
+            document.querySelector(icon_str).classList.toggle('fa-times');
+            var ans_str=`.ans_${id}`;
+            document.querySelector(ans_str).classList.toggle('hide');
+        }
+    }
+})()
+
+var Controller=(function(QueryCtrl){
+    var flag=0,btn_element;
+    var selector=QueryCtrl.getSelector();
 
     var ChangePosition=(e)=>{
         selector.placeholder.classList.add('change_top');
@@ -43,12 +63,17 @@ var Controller=(function(){
         selector.input_email.addEventListener('blur',RemovePosition);  
         //alert event
         selector.input_email.addEventListener('input',AlertMessage);
+        selector.question.forEach((curr)=>{
+            curr.addEventListener('click',function(){
+                QueryCtrl.ShowAnswer(curr.id);
+            });
+        });
     };
     return {
         init:()=>{
             SetupEventListener();
         },
     }
-})();
+})(QueryController);
 
 Controller.init();

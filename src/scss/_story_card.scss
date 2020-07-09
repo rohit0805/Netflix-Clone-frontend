@@ -1,0 +1,29 @@
+.story_card{
+    padding:50px 35px;
+    color:white;
+    .heading{
+        text-align:center;
+        font-size:3.125rem;
+        margin-bottom:2rem;
+    }
+    border-bottom:8px solid $border-bottom-color;
+}
+
+.asked{
+    display:flex;
+    justify-content: space-between;
+    background-color:$ask-back-color;
+    padding:1.25rem 3rem;
+    font-size:26px;
+    box-shadow:4px 4px 10px black,-4px -4px 10px #111;
+    margin-top:8px;
+    margin-bottom:1px;
+    cursor: pointer;
+}
+
+.answer_des{
+    background-color: $ask-back-color;
+    padding:2rem;
+    font-size:26px;
+    margin:0 auto;
+}

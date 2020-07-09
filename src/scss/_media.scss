@@ -69,6 +69,16 @@
             }
         }
     }
+    .story_card{
+        .asked_container{
+            .heading{
+                font-size:40px;
+            }
+            .asked,.answer_des{
+                font-size:20px;
+            }
+        }
+    }
 }
 
 @media (max-width:550px){
@@ -160,6 +170,21 @@
                         width:30px;
                     }
                 }
+            }
+        }
+    }
+    .story_card{
+        padding:20px 0;
+        .asked_container{
+            .heading{
+                font-size:26px;
+            }
+            .asked{
+                font-size:16px;
+                padding:1rem 1.5rem;
+            }
+            .answer_des{
+                font-size:16px;
             }
         }
     }
