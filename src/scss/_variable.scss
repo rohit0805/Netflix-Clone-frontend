@@ -2,6 +2,7 @@ $primary-color:#e50914;
 $overlay-color:rgba(0,0,0,0.6);
 $border-bottom-color:#222;
 $alert-color:#ffa00a;
+$download-color:#0071eb;
 
 *{
     margin:0;
@@ -40,4 +41,14 @@ body{
     padding:0 1.4rem;
     top:0;
     left:0;
+}
+
+.container{
+    max-width:1100px;
+    width:100%;
+    margin:0 auto;
+}
+
+.box_reverse{
+    flex-direction:row-reverse;
 }
