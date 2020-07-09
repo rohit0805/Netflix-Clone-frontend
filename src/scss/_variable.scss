@@ -4,6 +4,7 @@ $border-bottom-color:#222;
 $alert-color:#ffa00a;
 $download-color:#0071eb;
 $ask-back-color:#303030;
+$footer-color:#757575;
 
 *{
     margin:0;
@@ -62,4 +63,10 @@ body{
 
 .hide{
     display:none;
+}
+
+.footer_container{
+    max-width:1000px;
+    width:100%;
+    margin:0 auto;
 }

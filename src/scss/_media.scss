@@ -81,6 +81,18 @@
     }
 }
 
+
+@media (max-width:740px){
+    .footer{
+        padding:50px 25px 0;
+        .footer_container{
+            .flex_footer{
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+    }
+}
+
 @media (max-width:550px){
     .showcase{
         height:507px;
@@ -188,5 +200,11 @@
             }
         }
     }
+    .footer{
+        .footer_container{
+            .flex_footer{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    }
 }
-

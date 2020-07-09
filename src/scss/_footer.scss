@@ -1,0 +1,37 @@
+.footer{
+    color:$footer-color;
+    padding:75px 45px 0;
+}
+
+.footer_container{    
+    .call{
+        margin:0 0 30px;
+        .call_btn{
+            color:$footer-color;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .area{
+        margin:24px 0 2rem;
+        font-size:13px;
+    }
+
+    .flex_footer{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        font-size:13px;
+        a{
+            margin:0 0 1rem;
+            padding:0 12px 0 0;
+            color:$footer-color;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
